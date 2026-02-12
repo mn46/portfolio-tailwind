@@ -207,6 +207,15 @@
   .z-20 {
     z-index: 20;
   }
+  .m-10 {
+    margin: calc(var(--spacing) * 10);
+  }
+  .m-20 {
+    margin: calc(var(--spacing) * 20);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
