@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Simple webshop",
+      "technologies": ["React", "React router", "Tailwind CSS", "TypeScript"],
+      "description": "To practice my React and TypeScript skills, and learn React Router, I decided to use a free products API (https://fakestoreapi.com/) and create a simple webshop. The project helped me to practise basic frontend development skills: responsive design, fetching and displaying data or error handling.",
+      "image": "assets/webshop.png",
+      "link": "https://webshop-g9vhja8by-mn46s-projects.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "Sneakers product page",
+      "technologies": ["React", "Tailwind CSS", "TypeScript"],
+      "description": "This is a simple product page, where user can view different pictures of the product and add them to the cart. I used React mostly for learning purposes. To have it a bit more challenging, I decided to save the cart content in the local storage. That was probably the biggest challenge for me, especially 'merging' local storage with state management in React. Design was provided by Frontend Mentor: https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6.",
+      "image": "assets/product.png",
+      "link": " https://product-page-ashy.vercel.app/"
+    },
+    {
+      "id": 3,
+      "title": "Responsive design",
+      "technologies": ["HTML", "CSS"],
+      "description": "A simple page on which I practised my responsive design skills using pure CSS. The project allowed me to get hands-on experience with the topic both in terms of code as well as design.",
+      "image": "assets/responsive.png",
+      "link": " https://mn46.github.io/responsive-design/"
+    }
+  ]
+}
