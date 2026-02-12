@@ -1,6 +1,7 @@
 "use strict";
 
 const follower = document.querySelector("#follower");
+const arrowBtn = document.querySelector("#arrow");
 
 const followMouse = (e) => {
   const x = e.clientX;
@@ -10,3 +11,9 @@ const followMouse = (e) => {
 };
 
 follower.addEventListener("mousemove", followMouse);
+
+const scrollToMyWorks = () => {
+  document.querySelector("#my_works").scrollIntoView({ behavior: "smooth" });
+};
+
+arrowBtn.addEventListener("click", scrollToMyWorks);
