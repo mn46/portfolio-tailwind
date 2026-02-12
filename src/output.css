@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
-@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -14,6 +13,7 @@
     --text-6xl--line-height: 1;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --color-light-blue: #c4dcff;
   }
 }
 @layer base {
@@ -165,53 +165,7 @@
   }
 }
 @layer utilities {
-  .table {
-    display: table;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
-  .text-2xl {
-    font-size: var(--text-2xl);
-    line-height: var(--tw-leading, var(--text-2xl--line-height));
-  }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-  .text-red-500 {
-    color: var(--color-red-500);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@layer properties {
-  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
-    *, ::before, ::after, ::backdrop {
-      --tw-border-style: solid;
-      --tw-outline-style: solid;
-    }
+  .bg-light-blue {
+    background-color: var(--color-light-blue);
   }
 }
