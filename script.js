@@ -13,7 +13,7 @@ const followMouse = (e) => {
 follower.addEventListener("mousemove", followMouse);
 
 const scrollToMyWorks = () => {
-  document.querySelector("#my_works").scrollIntoView({ behavior: "smooth" });
+  document.querySelector("#my_works").scrollIntoView();
 };
 
 arrowBtn.addEventListener("click", scrollToMyWorks);

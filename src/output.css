@@ -180,6 +180,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -201,6 +204,9 @@
   .z-10 {
     z-index: 10;
   }
+  .z-20 {
+    z-index: 20;
+  }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
@@ -221,6 +227,9 @@
   }
   .h-screen {
     height: 100vh;
+  }
+  .min-h-screen {
+    min-height: 100vh;
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
@@ -395,11 +404,41 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-dark-blue {
+    color: var(--color-dark-blue);
+  }
   .text-white {
     color: var(--color-white);
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .mix-blend-color {
+    mix-blend-mode: color;
+  }
+  .mix-blend-color-burn {
+    mix-blend-mode: color-burn;
+  }
+  .mix-blend-color-dodge {
+    mix-blend-mode: color-dodge;
+  }
+  .mix-blend-darken {
+    mix-blend-mode: darken;
+  }
+  .mix-blend-difference {
+    mix-blend-mode: difference;
+  }
+  .mix-blend-exclusion {
+    mix-blend-mode: exclusion;
+  }
+  .mix-blend-hard-light {
+    mix-blend-mode: hard-light;
+  }
+  .mix-blend-lighten {
+    mix-blend-mode: lighten;
+  }
+  .mix-blend-saturation {
+    mix-blend-mode: saturation;
   }
   .outline {
     outline-style: var(--tw-outline-style);
