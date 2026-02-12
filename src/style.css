@@ -3,4 +3,6 @@
 @theme {
   --color-light-blue: #c4dcff;
   --color-dark-blue: #4581d7;
+  --font-headline: "Gloock", serif;
+  --font-body: "Instrument Sans", serif;
 }
