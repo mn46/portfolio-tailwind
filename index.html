@@ -14,23 +14,37 @@
     <title>Marta Nowak - portfolio</title>
   </head>
   <body class="font-body">
-    <header>
-      <ul>
+    <header class="bg-light-blue">
+      <ul
+        class="flex flex-row justify-between md:justify-start md:gap-20 font-semibold text-white px-3 md:px-10 py-5"
+      >
         <li><a href="#home">home</a></li>
         <li><a href="#my_works">my works</a></li>
         <li><a href="#about_me">about me</a></li>
       </ul>
     </header>
     <main>
-      <section id="home" class="bg-light-blue">
-        <div>
-          <h1 class="font-headline text-6xl">Hello!</h1>
-          <p>My name is Marta. I am an aspiring full-stack developer.</p>
-          <p>
+      <section
+        id="home"
+        class="relative bg-light-blue h-screen flex flex-col items-center justify-center gap-40 overflow-hidden"
+      >
+        <div
+          id="follower"
+          class="absolute top-0 left-0 will-change-transform w-[50vw] aspect-square rounded-full bg-dark-blue blur-3xl"
+        ></div>
+
+        <div class="z-10">
+          <h1 class="font-headline text-6xl text-white text-center mb-10">
+            Hello!
+          </h1>
+          <p class="font-semibold text-white text-center">
+            My name is Marta. I am an aspiring full-stack developer.
+          </p>
+          <p class="font-semibold text-white text-center">
             I harness the power of design and code to deliver quite nice things.
           </p>
         </div>
-        <img src="assets/arrow.png" />
+        <img src="assets/arrow.png" class="z-10" />
       </section>
       <section id="my_works">
         <h2 class="font-headline text-3xl">My works</h2>
