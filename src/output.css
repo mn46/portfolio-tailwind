@@ -183,8 +183,14 @@
   .relative {
     position: relative;
   }
+  .-top-10 {
+    top: calc(var(--spacing) * -10);
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -227,6 +233,12 @@
   }
   .w-\[50vw\] {
     width: 50vw;
+  }
+  .w-\[65vw\] {
+    width: 65vw;
+  }
+  .w-\[70vw\] {
+    width: 70vw;
   }
   .border-collapse {
     border-collapse: collapse;
