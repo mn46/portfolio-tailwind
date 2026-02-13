@@ -55,9 +55,14 @@
         <h2 class="font-headline text-3xl text-center text-dark-blue">
           My works
         </h2>
-        <div id="projects_list">
+        <div id="projects_list" class="space-y-10 mt-20">
           <template id="project_card">
-            <button>
+            <button
+              class="project-button relative rounded-xl overflow-hidden cursor-pointer"
+            >
+              <div
+                class="absolute top-0 left-0 w-full h-full bg-dark-blue mask-linear-from-dark-blue hover:opacity-0 transition duration-300 ease-out"
+              ></div>
               <img class="project-image" src="" />
             </button>
           </template>
