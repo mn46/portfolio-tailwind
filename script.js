@@ -2,6 +2,7 @@
 
 const follower = document.querySelector("#follower");
 const arrowBtn = document.querySelector("#arrow");
+let projects;
 
 const getProjectsData = async () => {
   try {
@@ -20,7 +21,8 @@ const getProjectsData = async () => {
 
 const init = async () => {
   const projectsData = await getProjectsData();
-  createProjectCards(projectsData.projects);
+  projects = projectsData.projects;
+  createProjectCards();
 };
 
 const followMouse = (e) => {
@@ -38,14 +40,43 @@ const scrollToMyWorks = () => {
 
 arrowBtn.addEventListener("click", scrollToMyWorks);
 
-const createProjectCards = (projects) => {
+const showAndPopulateModal = (e) => {
+  document.querySelector("#modal").style.display = "block";
+
+  const projectId = Number(e.target.id);
+
+  const project = projects.find((item) => item.id === projectId);
+
+  const title = document.querySelector("#modal_title");
+  const image = document.querySelector("#modal_image");
+  const technologies = document.querySelector("#modal_technologies");
+  const description = document.querySelector("#modal_description");
+
+  title.textContent = project.title;
+  image.src = project.image;
+  technologies.textContent = project.technologies.join(", ");
+  description.textContent = project.description;
+
+  document.querySelector("#close_button").addEventListener("click", closeModal);
+};
+
+const closeModal = () => {
+  document.querySelector("#modal").style.display = "none";
+};
+
+const createProjectCards = () => {
   const parentForProjects = document.querySelector("#projects_list");
   const projectTemplate = document.querySelector("#project_card");
 
   projects.forEach((project) => {
     const clone = projectTemplate.content.cloneNode(true);
+
     clone.querySelector("button").id = project.id;
     clone.querySelector(".project-image").src = project.image;
+    clone
+      .querySelector("button")
+      .addEventListener("click", showAndPopulateModal);
+
     parentForProjects.appendChild(clone);
   });
 };
