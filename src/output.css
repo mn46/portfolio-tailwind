@@ -15,6 +15,7 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-semibold: 600;
     --radius-xl: 0.75rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -274,6 +275,9 @@
   .resize {
     resize: both;
   }
+  .list-disc {
+    list-style-type: disc;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -360,6 +364,12 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
   .text-center {
     text-align: center;
   }
@@ -380,6 +390,10 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -460,6 +474,11 @@
   .md\:mx-0 {
     @media (width >= 48rem) {
       margin-inline: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:mx-20 {
+    @media (width >= 48rem) {
+      margin-inline: calc(var(--spacing) * 20);
     }
   }
   .md\:w-\[50vw\] {
@@ -557,6 +576,46 @@
       margin: calc(var(--spacing) * 20);
     }
   }
+  .lg\:m-40 {
+    @media (width >= 64rem) {
+      margin: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:mx-40 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:mx-60 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:mx-80 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 80);
+    }
+  }
+  .lg\:mx-88 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 88);
+    }
+  }
+  .lg\:mx-90 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 90);
+    }
+  }
+  .lg\:mx-\[22rem\] {
+    @media (width >= 64rem) {
+      margin-inline: 22rem;
+    }
+  }
+  .lg\:mx-\[66rem\] {
+    @media (width >= 64rem) {
+      margin-inline: 66rem;
+    }
+  }
   .lg\:my-20 {
     @media (width >= 64rem) {
       margin-block: calc(var(--spacing) * 20);
@@ -597,6 +656,11 @@
   .lg\:px-60 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:py-20 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 20);
     }
   }
   .lg\:shadow-xl {
