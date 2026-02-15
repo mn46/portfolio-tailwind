@@ -51,11 +51,14 @@ const showAndPopulateModal = (e) => {
   const image = document.querySelector("#modal_image");
   const technologies = document.querySelector("#modal_technologies");
   const description = document.querySelector("#modal_description");
+  const link = document.querySelector("#project_link");
 
   title.textContent = project.title;
   image.src = project.image;
   technologies.textContent = project.technologies.join(", ");
   description.textContent = project.description;
+  link.href = project.link;
+  link.textContent = project.link;
 
   document.querySelector("#close_button").addEventListener("click", closeModal);
 };
