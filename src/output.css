@@ -463,6 +463,11 @@
       margin-inline: calc(var(--spacing) * 20);
     }
   }
+  .md\:max-h-\[90vh\] {
+    @media (width >= 48rem) {
+      max-height: 90vh;
+    }
+  }
   .md\:w-\[50vw\] {
     @media (width >= 48rem) {
       width: 50vw;
@@ -471,6 +476,11 @@
   .md\:w-\[65vw\] {
     @media (width >= 48rem) {
       width: 65vw;
+    }
+  }
+  .md\:max-w-\[80vw\] {
+    @media (width >= 48rem) {
+      max-width: 80vw;
     }
   }
   .md\:justify-start {
@@ -551,6 +561,11 @@
   .xl\:my-20 {
     @media (width >= 80rem) {
       margin-block: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:px-40 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 40);
     }
   }
 }
