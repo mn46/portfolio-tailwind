@@ -41,7 +41,7 @@ const scrollToMyWorks = () => {
 arrowBtn.addEventListener("click", scrollToMyWorks);
 
 const showAndPopulateModal = (e) => {
-  document.querySelector("#modal").style.display = "block";
+  document.querySelector("#modal").style.display = "flex";
 
   const projectId = Number(e.target.id);
 

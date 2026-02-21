@@ -106,40 +106,54 @@
       </section>
 
       <!-- modal -->
-      <section
+      <div
         id="modal"
-        role="modal"
-        class="fixed top-0 left-0 lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 lg:shadow-xl bg-white w-full h-full lg:max-w-[60vw] lg:max-h-[90vh] lg:rounded-xl z-30 overflow-auto"
+        class="fixed top-0 left-0 bg-black/40 w-screen h-screen z-30 justify-center items-center"
         style="display: none"
       >
-        <div class="bg-linear-0 from-light-blue to-dark-blue">
-          <button
-            id="close_button"
-            class="p-4 cursor-pointer text-3xl font-semibold text-white"
-          >
-            X
-          </button>
-          <h3
-            id="modal_title"
-            class="font-headline text-white text-4xl text-center my-10 lg:my-20"
-          ></h3>
-          <img id="modal_image" src="" />
-          <div class="p-5 md:py-10 md:px-20 lg:px-40">
-            <h4 class="text-dark-blue font-semibold">Technologies used:</h4>
-            <p id="modal_technologies" class="text-dark-blue font-semibold"></p>
+        <section
+          role="dialog"
+          class="bg-white w-full h-full lg:max-w-[60vw] lg:max-h-[90vh] lg:rounded-xl overflow-auto"
+        >
+          <div class="bg-linear-0 from-light-blue to-dark-blue">
+            <button
+              id="close_button"
+              class="p-4 cursor-pointer text-3xl font-semibold text-white"
+            >
+              X
+            </button>
+            <h3
+              id="modal_title"
+              class="font-headline text-white text-4xl text-center my-10 lg:my-20"
+            ></h3>
+            <img id="modal_image" src="" />
+            <div class="p-5 md:py-10 md:px-20 lg:px-40">
+              <h4 class="text-dark-blue font-semibold">Technologies used:</h4>
+              <p
+                id="modal_technologies"
+                class="text-dark-blue font-semibold"
+              ></p>
+            </div>
           </div>
-        </div>
-        <p
-          id="modal_description"
-          class="text-dark-blue font-semibold p-5 md:pt-10 md:px-20 lg:px-40"
-        ></p>
-        <p class="text-dark-blue font-semibold p-5 md:pb-10 md:px-20 lg:px-40">
-          See the full project:
-          <span
-            ><a id="project_link" href="" target="_blank" class="underline"></a
-          ></span>
-        </p>
-      </section>
+          <p
+            id="modal_description"
+            class="text-dark-blue font-semibold p-5 md:pt-10 md:px-20 lg:px-40"
+          ></p>
+          <p
+            class="text-dark-blue font-semibold p-5 md:pb-10 md:px-20 lg:px-40"
+          >
+            See the full project:
+            <span
+              ><a
+                id="project_link"
+                href=""
+                target="_blank"
+                class="underline"
+              ></a
+            ></span>
+          </p>
+        </section>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
