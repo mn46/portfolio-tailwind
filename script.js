@@ -55,6 +55,7 @@ const showAndPopulateModal = (e) => {
 
   title.textContent = project.title;
   image.src = project.image;
+  image.alt = project.imageAlt;
   technologies.textContent = project.technologies.join(", ");
   description.textContent = project.description;
   link.href = project.link;
@@ -76,6 +77,7 @@ const createProjectCards = () => {
 
     clone.querySelector("button").id = project.id;
     clone.querySelector(".project-image").src = project.image;
+    clone.querySelector(".project-image").alt = project.imageAlt;
     clone
       .querySelector("button")
       .addEventListener("click", showAndPopulateModal);
